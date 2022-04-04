@@ -1246,15 +1246,7 @@ paint:
 	stack_pop($t0)
 	stack_pop($ra)
 	jr $ra
-	
-
-
-
-
-
-
-
-	
+		
 Exit:
 	li $v0, 10 # terminate the program gracefully
 	syscall
