@@ -23,8 +23,7 @@
 # 3. (Easy feature) Have objects in different rows move at different speeds
 # 4. (Easy feature) Add a third row in each of the water and road sections
 # 5. (Easy feature) Randomize the size of the logs and cars in the scene.
-# 6. (Hard feature) Make a second level that starts after the player completes the first level. Five levels in total, one level per 
-# 			frog placed at the top area
+# 6. (Hard feature) Make a second level that starts after the player completes the first level. Five levels in total, one level per frog placed at the top area
 #
 # Any additional information that the TA needs to know:
 # - Press Q to quit the game at any time (when game is quit, needs reassemble and run to restart)
@@ -887,10 +886,8 @@ drawLivesRemainingEnd:
 	jr $ra
 	
 	
-	
-				
-						
-# Draw Static Frog in end Zone
+			
+# Draw Static Frog in End Zone
 drawStaticFrog:
 	stack_push($ra)
 	stack_push($t0)
@@ -964,7 +961,6 @@ End:
 	jr $ra
 
 
-
 # Reset frog
 resetFrog:
 	stack_push($ra)
@@ -983,8 +979,6 @@ resetFrog:
 	stack_pop($t0)
 	stack_pop($ra)
 	jr $ra
-
-
 
 
 # Draw Movable object
@@ -1246,14 +1240,6 @@ paint:
 	stack_pop($t0)
 	stack_pop($ra)
 	jr $ra
-	
-
-
-
-
-
-
-
 	
 Exit:
 	li $v0, 10 # terminate the program gracefully
